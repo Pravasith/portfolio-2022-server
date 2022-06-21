@@ -2,6 +2,7 @@ import cors from "cors"
 import express from "express"
 
 import routes from "./routes"
+import mongooseService from "./services/mongooseService"
 
 const app = express()
 const port = 8000 // default port to listen
@@ -15,6 +16,8 @@ app.use(cors(corsOptions))
 
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
+
+mongooseService.connectToMongoDBWithMongoose()
 
 app.use("/", routes)
 
