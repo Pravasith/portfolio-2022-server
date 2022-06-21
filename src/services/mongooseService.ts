@@ -1,5 +1,5 @@
+import configs from "@configs/index"
 import mongoose from "mongoose"
-import configs from "../configs"
 
 const { uri } = configs.mongodbConfig
 

@@ -1,4 +1,4 @@
-import mongodbConfig from "./mongoDBConfig"
+import mongodbConfig from "@configs/mongoDBConfig"
 
 const configs = {
     mongodbConfig,

@@ -1,8 +1,8 @@
 import cors from "cors"
 import express from "express"
 
-import routes from "./routes"
-import mongooseService from "./services/mongooseService"
+import routes from "@routes/index"
+import mongooseService from "@services/mongooseService"
 
 const app = express()
 const port = 8000 // default port to listen

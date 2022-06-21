@@ -1,4 +1,4 @@
-import mongooseService from "./mongooseService"
+import mongooseService from "@services/mongooseService"
 
 const services = {
     mongooseService,
