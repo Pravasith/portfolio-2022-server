@@ -20,6 +20,10 @@ const textBlocksSchema = new Schema<TextBlocksType>({
         required: true,
         unique: true,
     },
+    type: {
+        type: String,
+        required: true,
+    },
     textBlocks: [
         {
             type: textBlockSchema,

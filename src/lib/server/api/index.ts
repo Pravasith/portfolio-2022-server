@@ -8,4 +8,5 @@ export const BASE_URLS = {
 
 export const API_ROUTE_URLS = {
     CREATE_TEXT_BLOCK: BASE_URLS.TEXT_BLOCKS + "/create",
+    GET_TEXT_BLOCKS: BASE_URLS.TEXT_BLOCKS,
 }

@@ -1,10 +1,8 @@
 import { Router } from "express"
 import dotenv from "dotenv"
 import models from "@models/index"
-import { ETextTypes } from "@models/TextBlocks/interface"
+import { ETextBlockTypes, ETextTypes } from "@models/TextBlocks/interface"
 import { API_ROUTE_URLS, BASE_URLS } from "@lib/server/api"
-
-// import urls from "./urls"
 
 dotenv.config()
 
@@ -20,17 +18,25 @@ router.get(API_ROUTE_URLS.CREATE_TEXT_BLOCK, async (_, res) => {
     const { TextBlocks } = models
 
     const textBlock = await TextBlocks.create({
-        name: "home-section-1",
+        name: "home-section-4",
+        type: ETextBlockTypes.HOME_PAGE,
         textBlocks: [
             {
                 type: ETextTypes.H1,
-                text: `A Product Designer :br: turned:br: Software Engineer.`,
-            },
-            {
-                type: ETextTypes.P,
-                text: "Hey, I'm Pravas 👋🏼, a :span:>Full Stack TypeScript/JavaScript<:span: developer who is passionate about delivering the best :span:> User Experiences 🎨<:span: & loves :span:> optimizing data 🚀<:span: by utilizing data structures and writing algorithms.",
+                text: `Write to me!`,
             },
         ],
+    })
+
+    res.send(textBlock)
+})
+
+router.get(API_ROUTE_URLS.GET_TEXT_BLOCKS, async (req, res) => {
+    const { TextBlocks } = models
+    const { type } = req.query
+
+    const textBlock = await TextBlocks.find({
+        type,
     })
 
     res.send(textBlock)
