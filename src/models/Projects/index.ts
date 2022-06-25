@@ -1,6 +1,6 @@
-import { mediaBlockSchema } from "@models/MediaBlock/index"
 import { ProjectsType, ProjectType } from "./interface"
 import { model, Schema } from "mongoose"
+import { mediaBlockSchema } from "@models/MediaBlocks"
 
 const projectSchema = new Schema<ProjectType>({
     title: String,

@@ -11,6 +11,7 @@ export type ImageBlockType = {
     width: number
     height: number
     caption: string
+    page: string
     showCaption?: boolean
     hyperlink?: string
 }
@@ -23,6 +24,7 @@ export type VideoBlockType = {
     width: number
     height: number
     caption: string
+    page: string
     showCaption?: boolean
     hyperlink?: string
 }
