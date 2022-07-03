@@ -1,5 +1,6 @@
+import { BlockGroupTypes } from "./../interface"
 import { Schema, model } from "mongoose"
-import { TextBlocksType, TextBlockType } from "./interface"
+import { TextGroupsType, TextBlockType } from "./interface"
 
 const textBlockSchema = new Schema<TextBlockType>({
     type: {
@@ -10,17 +11,24 @@ const textBlockSchema = new Schema<TextBlockType>({
         type: String,
         required: true,
     },
-    textColorClassName: String,
-    spanColorClassName: String,
+    order: {
+        type: Number,
+        required: true,
+    },
 })
 
-const textBlocksSchema = new Schema<TextBlocksType>({
+const textGroupsSchema = new Schema<TextGroupsType>({
     name: {
         type: String,
         required: true,
         unique: true,
     },
     type: {
+        type: String,
+        default: BlockGroupTypes.TEXT_GROUP,
+        auto: true,
+    },
+    page: {
         type: String,
         required: true,
     },
@@ -32,4 +40,4 @@ const textBlocksSchema = new Schema<TextBlocksType>({
     ],
 })
 
-export default model<TextBlocksType>("TextBlock", textBlocksSchema)
+export default model<TextGroupsType>("TextGroup", textGroupsSchema)

@@ -1,6 +1,6 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const mongoose_1 = require("mongoose");
+"use strict"
+Object.defineProperty(exports, "__esModule", { value: true })
+const mongoose_1 = require("mongoose")
 const textBlockSchema = new mongoose_1.Schema({
     type: {
         type: String,
@@ -12,7 +12,7 @@ const textBlockSchema = new mongoose_1.Schema({
     },
     textColorClassName: String,
     spanColorClassName: String,
-});
+})
 const textBlocksSchema = new mongoose_1.Schema({
     name: {
         type: String,
@@ -25,5 +25,5 @@ const textBlocksSchema = new mongoose_1.Schema({
             required: true,
         },
     ],
-});
-exports.default = (0, mongoose_1.model)("TextBlock", textBlocksSchema);
+})
+exports.default = (0, mongoose_1.model)("TextGroup", textBlocksSchema)

@@ -25,6 +25,7 @@ export type VideoBlockType = {
     height: number
     caption: string
     page: string
+    order: number
     showCaption?: boolean
     hyperlink?: string
 }
