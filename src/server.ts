@@ -1,8 +1,14 @@
 import cors from "cors"
 import express from "express"
+import path from "path"
+
+process.env.NODE_ENV !== "production" &&
+    require("dotenv").config({
+        path: path.join(__dirname, "/envs/staging.env"),
+    })
 
 import routes from "@routes/index"
-import mongooseService from "@services/mongooseService"
+import MongooseService from "@services/MongooseService"
 
 const app = express()
 const port = 8000 // default port to listen
@@ -17,7 +23,7 @@ app.use(cors(corsOptions))
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
-mongooseService.connectToMongoDBWithMongoose()
+MongooseService.connect()
 
 app.use("/", routes)
 

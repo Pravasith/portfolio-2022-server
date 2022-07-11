@@ -1,7 +1,7 @@
-import mongodbConfig from "@configs/mongoDBConfig"
+import MongoDB from "@configs/MongoDBConfig"
 
 const configs = {
-    mongodbConfig,
+    MongoDB,
 }
 
 export default configs

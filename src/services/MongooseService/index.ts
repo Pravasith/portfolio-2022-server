@@ -1,9 +1,9 @@
 import configs from "@configs/index"
 import mongoose from "mongoose"
 
-const { uri } = configs.mongodbConfig
+const { uri } = configs.MongoDB
 
-const connectToMongoDBWithMongoose = () => {
+const connect = () => {
     mongoose
         .connect(uri)
         .then(() => {
@@ -12,6 +12,8 @@ const connectToMongoDBWithMongoose = () => {
         .catch(err => console.error(err))
 }
 
-const mongooseService = { connectToMongoDBWithMongoose }
+const MongooseService = {
+    connect,
+}
 
-export default mongooseService
+export default MongooseService

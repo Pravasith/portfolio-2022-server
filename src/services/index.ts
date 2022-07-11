@@ -1,7 +1,7 @@
-import mongooseService from "@services/mongooseService"
+import MongooseService from "@services/MongooseService"
 
 const services = {
-    mongooseService,
+    MongooseService,
 }
 
 export default services
