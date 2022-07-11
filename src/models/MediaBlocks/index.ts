@@ -9,7 +9,7 @@ export const mediaBlockSchema = new Schema<MediaBlockType>({
     page: { type: String, required: true },
     width: { type: Number, required: true },
     height: { type: Number, required: true },
-    caption: { type: String, required: true },
+    caption: { type: String },
     showCaption: Boolean,
     hyperlink: String,
     order: { type: Number, required: true },

@@ -1,4 +1,4 @@
-export enum ESrcType {
+export enum EMediaType {
     VIDEO = "VIDEO",
     IMAGE = "IMAGE",
 }
@@ -6,11 +6,11 @@ export enum ESrcType {
 export type ImageBlockType = {
     src: string
     alt: string
-    type: ESrcType.IMAGE
+    type: EMediaType.IMAGE
     id: string
     width: number
     height: number
-    caption: string
+    caption?: string
     page: string
     showCaption?: boolean
     hyperlink?: string
@@ -19,11 +19,11 @@ export type ImageBlockType = {
 export type VideoBlockType = {
     src: string
     alt: string
-    type: ESrcType.VIDEO
+    type: EMediaType.VIDEO
     id: string
     width: number
     height: number
-    caption: string
+    caption?: string
     page: string
     order: number
     showCaption?: boolean

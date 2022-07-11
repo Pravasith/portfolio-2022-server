@@ -5,7 +5,7 @@ import { MediaGroupType } from "./interface"
 import { mediaBlockSchema } from "@models/MediaBlocks"
 
 export const mediaGroupSchema = new Schema<MediaGroupType>({
-    id: { type: String, required: true, unique: true },
+    id: { type: String, auto: true, unique: true },
     name: {
         type: String,
         required: true,
@@ -13,7 +13,7 @@ export const mediaGroupSchema = new Schema<MediaGroupType>({
     },
     type: {
         type: String,
-        default: BlockGroupTypes.TEXT_GROUP,
+        default: BlockGroupTypes.MEDIA_GROUP,
         auto: true,
     },
     mediaBlocks: {
