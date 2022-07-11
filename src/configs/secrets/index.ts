@@ -1,5 +1,3 @@
-console.log(process.env.MONGODB_USERNAME)
-
 const MongoDB = {
     USERNAME: process.env.MONGODB_USERNAME, // "pravasith",
     PASSWORD: process.env.MONGODB_PASSWORD, //   "1DYZvOQPvqWX4BkF",
@@ -8,8 +6,8 @@ const MongoDB = {
 }
 
 const Cloudinary = {
-    API_KEY: "544424448421798",
-    API_SECRET: "bJ3r3AKW95taSmooZ2B7goEut4c",
+    API_KEY: process.env.CLOUDINARY_API_KEY, // "544424448421798",
+    API_SECRET: process.env.CLOUDINARY_API_SECRET, // "bJ3r3AKW95taSmooZ2B7goEut4c",
 }
 
 const secrets = {
