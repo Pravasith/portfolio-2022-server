@@ -1,13 +1,15 @@
-import MediaGroups from "@models/MediaGroups"
-import Projects from "@models/Projects"
-import MediaBlocks from "@models/MediaBlocks"
-import TextGroups from "@models/TextGroups"
+import MediaGroupModel from "@models/MediaGroupModel"
+import ProjectModel from "@models/ProjectModel"
+import MediaBlockModel from "@models/MediaBlockModel"
+import TextGroupModel from "@models/TextGroupModel"
+import BlogModel from "@models/BlogModel"
 
 const models = {
-    TextGroups,
-    Projects,
-    MediaBlocks,
-    MediaGroups,
+    MediaGroupModel,
+    ProjectModel,
+    MediaBlockModel,
+    TextGroupModel,
+    BlogModel,
 }
 
 export default models

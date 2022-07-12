@@ -1,4 +1,4 @@
-import { BlockGroupTypes } from "./../interface"
+import { BlockGroupTypes } from "../interface"
 import { Schema, model } from "mongoose"
 import { TextGroupsType, TextBlockType } from "./interface"
 
@@ -40,4 +40,6 @@ const textGroupsSchema = new Schema<TextGroupsType>({
     ],
 })
 
-export default model<TextGroupsType>("TextGroup", textGroupsSchema)
+const TextGroupModel = model<TextGroupsType>("TextGroup", textGroupsSchema)
+
+export default TextGroupModel

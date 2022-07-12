@@ -1,6 +1,6 @@
 import { ProjectsType, ProjectType } from "./interface"
 import { model, Schema } from "mongoose"
-import { mediaBlockSchema } from "@models/MediaBlocks"
+import { mediaBlockSchema } from "@models/MediaBlockModel"
 
 const projectSchema = new Schema<ProjectType>({
     title: String,
@@ -21,4 +21,6 @@ const projectsSchema = new Schema<ProjectsType>({
     },
 })
 
-export default model<ProjectsType>("Project", projectsSchema)
+const ProjectModel = model<ProjectsType>("Project", projectsSchema)
+
+export default ProjectModel

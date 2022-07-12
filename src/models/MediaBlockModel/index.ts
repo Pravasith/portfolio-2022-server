@@ -15,4 +15,6 @@ export const mediaBlockSchema = new Schema<MediaBlockType>({
     order: { type: Number, required: true },
 })
 
-export default model<MediaBlockType>("MediaBlock", mediaBlockSchema)
+const MediaBlockModel = model<MediaBlockType>("MediaBlock", mediaBlockSchema)
+
+export default MediaBlockModel

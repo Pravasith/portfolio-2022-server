@@ -1,5 +1,5 @@
 import { BlockGroupTypes } from "@models/interface"
-import { MediaBlockType } from "@models/MediaBlocks/interface"
+import { MediaBlockType } from "@models/MediaBlockModel/interface"
 
 export type MediaGroupType = {
     id: string
@@ -12,5 +12,8 @@ export type MediaGroupType = {
         type: BlockGroupTypes.MEDIA_GROUP
         auto: true
     }
-    mediaBlocks: MediaBlockType[]
+    mediaBlocks: {
+        type: MediaBlockType[]
+        required: true
+    }
 }

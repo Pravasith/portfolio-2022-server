@@ -1,4 +1,4 @@
-import { ImageBlockType } from "@models/MediaBlocks/interface"
+import { ImageBlockType } from "@models/MediaBlockModel/interface"
 
 export type ProjectType = {
     title: string

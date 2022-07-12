@@ -2,7 +2,7 @@ import { BlockGroupTypes } from "@models/interface"
 import { model, Schema } from "mongoose"
 
 import { MediaGroupType } from "./interface"
-import { mediaBlockSchema } from "@models/MediaBlocks"
+import { mediaBlockSchema } from "@models/MediaBlockModel"
 
 export const mediaGroupSchema = new Schema<MediaGroupType>({
     id: { type: String, auto: true, unique: true },
@@ -22,4 +22,6 @@ export const mediaGroupSchema = new Schema<MediaGroupType>({
     },
 })
 
-export default model<MediaGroupType>("MediaGroup", mediaGroupSchema)
+const MediaGroupModel = model<MediaGroupType>("MediaGroup", mediaGroupSchema)
+
+export default MediaGroupModel
