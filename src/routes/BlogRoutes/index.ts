@@ -5,7 +5,7 @@ import { RequestHandler } from "express"
 
 const { BlogModel } = models
 
-export const addBlog: RequestHandler = async (_, res) => {
+export const addBlog: RequestHandler = async (req, res) => {
     const userDetails = {
         username: "pravasith",
         fullName: "Pravasith Chinthoju",
@@ -48,7 +48,9 @@ export const addBlog: RequestHandler = async (_, res) => {
         tags: ["UX Design", "Product Design"],
     }
 
-    const blog = await BlogModel.create(blogData)
+    const blog = await BlogModel.create(req.body)
+
+    // console.log()
 
     res.send(blog)
 }

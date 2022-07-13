@@ -35,7 +35,7 @@ router.get(API_ROUTE_URLS.ADD_PROJECT, addProject)
 router.get(API_ROUTE_URLS.GET_PROJECTS, getProjects)
 
 // Blog Routes
-router.get(API_ROUTE_URLS.ADD_BLOG, addBlog)
+router.post(API_ROUTE_URLS.ADD_BLOG, addBlog)
 router.get(API_ROUTE_URLS.GET_BLOG, getBlogs)
 
 export default router
