@@ -19,11 +19,11 @@ const homeRoute: RequestHandler = (_, res) => {
 router.get(BASE_URLS.HOME, homeRoute)
 
 // TextGroup Routes
-router.get(API_ROUTE_URLS.ADD_TEXT_GROUP, addTextGroup)
+router.post(API_ROUTE_URLS.ADD_TEXT_GROUP, addTextGroup)
 router.get(API_ROUTE_URLS.GET_TEXT_GROUPS, getTextGroup)
 
 // MediaGroup Routes
-router.get(API_ROUTE_URLS.ADD_MEDIA_GROUP, addMediaGroup)
+router.post(API_ROUTE_URLS.ADD_MEDIA_GROUP, addMediaGroup)
 router.get(API_ROUTE_URLS.GET_MEDIA_GROUPS, getMediaGroups)
 
 // MediaBlock Routes

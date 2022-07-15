@@ -62,6 +62,13 @@ export const addProject: RequestHandler = async (_, res) => {
 }
 
 export const getProjects: RequestHandler = async (_, res) => {
-    const project = await ProjectModel.find()
-    res.send(project)
+    let response: any = { message: "project database error" }
+
+    try {
+        response = await ProjectModel.find()
+    } catch (err) {
+        console.error(err)
+    } finally {
+        res.send(response)
+    }
 }

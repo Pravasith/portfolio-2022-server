@@ -24,9 +24,15 @@ export const addMediaBlock: RequestHandler = async (_, res) => {
 export const getMediaBlocks: RequestHandler = async (req, res) => {
     const { page } = req.query
 
-    const textBlock = await MediaBlockModel.find({
-        page,
-    })
+    let response: any = { message: "media block database error" }
 
-    res.send(textBlock)
+    try {
+        response = await MediaBlockModel.find({
+            page,
+        })
+    } catch (err) {
+        console.error(err)
+    } finally {
+        res.send(response)
+    }
 }
