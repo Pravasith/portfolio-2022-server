@@ -1,6 +1,6 @@
 import { ProjectsType, ProjectType } from "./interface"
 import { model, Schema } from "mongoose"
-import { mediaBlockSchema } from "@models/MediaBlockModel"
+import { mediaBlockSchema } from "@models/MediaGroupModel"
 
 const projectSchema = new Schema<ProjectType>({
     title: String,

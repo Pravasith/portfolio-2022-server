@@ -6,7 +6,6 @@ import { addTextGroup, getTextGroup } from "@routes/TextGroupRoutes"
 import { addProject, getProjects } from "@routes/ProjectRoutes"
 import { addBlog, getBlogs } from "@routes/BlogRoutes"
 import { addMediaGroup, getMediaGroups } from "@routes/MediaGroupRoutes"
-import { addMediaBlock, getMediaBlocks } from "@routes/MediaBlockRoutes"
 
 const router = Router()
 
@@ -25,10 +24,6 @@ router.get(API_ROUTE_URLS.GET_TEXT_GROUPS, getTextGroup)
 // MediaGroup Routes
 router.post(API_ROUTE_URLS.ADD_MEDIA_GROUP, addMediaGroup)
 router.get(API_ROUTE_URLS.GET_MEDIA_GROUPS, getMediaGroups)
-
-// MediaBlock Routes
-router.get(API_ROUTE_URLS.ADD_MEDIA_BLOCK, addMediaBlock)
-router.get(API_ROUTE_URLS.GET_MEDIA_BLOCKS, getMediaBlocks)
 
 // Project Routes
 router.get(API_ROUTE_URLS.ADD_PROJECT, addProject)

@@ -20,10 +20,10 @@ export type MetaDataType = {
     twitterImage: string
 }
 
-export interface BlogsType {
+export interface BlogType {
     metaData: MetaDataType
     page: string
-    id: string
+    category: string
     title: string
     timestamp: Date
     thumbnail: string

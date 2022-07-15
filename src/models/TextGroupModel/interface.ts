@@ -18,9 +18,14 @@ export enum GroupPages {
     BLOGS = "BLOGS",
 }
 
-export type TextGroupsType = {
+export type TextSectionType = {
     name: string
-    page: GroupPages
-    type: { type: BlockGroupTypes.TEXT_GROUP; auto: true }
+    order: number
     textBlocks: TextBlockType[]
+}
+
+export type TextGroupsType = {
+    page: string
+    type: BlockGroupTypes.TEXT_GROUP
+    sections: TextSectionType[]
 }

@@ -1,4 +1,4 @@
-import { BlogsType, MetaDataType, UserDetailsType } from "./interface"
+import { BlogType, MetaDataType, UserDetailsType } from "./interface"
 
 import { Schema, model } from "mongoose"
 
@@ -72,7 +72,7 @@ const metaDataSchema = new Schema<MetaDataType>({
     },
 })
 
-const blogSchema = new Schema<BlogsType>({
+const blogSchema = new Schema<BlogType>({
     metaData: {
         type: metaDataSchema,
         required: true,
@@ -82,7 +82,7 @@ const blogSchema = new Schema<BlogsType>({
         required: true,
         unique: true,
     },
-    id: {
+    category: {
         type: String,
         required: true,
         unique: true,
@@ -109,6 +109,6 @@ const blogSchema = new Schema<BlogsType>({
     },
 })
 
-const BlogModel = model<BlogsType>("Blog", blogSchema)
+const BlogModel = model<BlogType>("Blog", blogSchema)
 
 export default BlogModel
