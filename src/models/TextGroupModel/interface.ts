@@ -9,7 +9,6 @@ export enum ETextBlockTypes {
 export type TextBlockType = {
     type: ETextBlockTypes
     text: string
-    order: number
 }
 
 export enum GroupPages {

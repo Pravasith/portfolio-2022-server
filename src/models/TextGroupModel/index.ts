@@ -11,10 +11,6 @@ const textBlockSchema = new Schema<TextBlockType>({
         type: String,
         required: true,
     },
-    order: {
-        type: Number,
-        required: true,
-    },
 })
 
 const sectionSchema = new Schema<TextSectionType>({
@@ -43,12 +39,10 @@ const textGroupsSchema = new Schema<TextGroupsType>({
         default: BlockGroupTypes.TEXT_GROUP,
         auto: true,
     },
-    sections: [
-        {
-            type: [sectionSchema],
-            required: true,
-        },
-    ],
+    sections: {
+        type: [sectionSchema],
+        required: true,
+    },
 })
 
 const TextGroupModel = model<TextGroupsType>("TextGroup", textGroupsSchema)

@@ -4,7 +4,7 @@ import { API_ROUTE_URLS, BASE_URLS } from "@lib/server/api"
 
 import { addTextGroup, getTextGroup } from "@routes/TextGroupRoutes"
 import { addProject, getProjects } from "@routes/ProjectRoutes"
-import { addBlog, getBlogs } from "@routes/BlogRoutes"
+import { addBlog, getBlogsByPage, getBlogsByCategory } from "@routes/BlogRoutes"
 import { addMediaGroup, getMediaGroups } from "@routes/MediaGroupRoutes"
 
 const router = Router()
@@ -31,6 +31,7 @@ router.get(API_ROUTE_URLS.GET_PROJECTS, getProjects)
 
 // Blog Routes
 router.post(API_ROUTE_URLS.ADD_BLOG, addBlog)
-router.get(API_ROUTE_URLS.GET_BLOG, getBlogs)
+router.get(API_ROUTE_URLS.GET_BLOGS, getBlogsByPage)
+router.get(API_ROUTE_URLS.GET_BLOGS_CATEGORIES, getBlogsByCategory)
 
 export default router

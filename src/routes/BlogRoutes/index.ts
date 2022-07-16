@@ -16,7 +16,7 @@ export const addBlog: RequestHandler = async (req, res) => {
     }
 }
 
-export const getBlogs: RequestHandler = async (req, res) => {
+export const getBlogsByPage: RequestHandler = async (req, res) => {
     const { page } = req.query
 
     let response: any = { message: "blog database error" }
@@ -24,6 +24,22 @@ export const getBlogs: RequestHandler = async (req, res) => {
     try {
         response = await BlogModel.find({
             page,
+        })
+    } catch (err) {
+        console.error(err)
+    } finally {
+        res.send(response)
+    }
+}
+
+export const getBlogsByCategory: RequestHandler = async (req, res) => {
+    const { category } = req.query
+
+    let response: any = { message: "blog database error" }
+
+    try {
+        response = await BlogModel.find({
+            category,
         })
     } catch (err) {
         console.error(err)

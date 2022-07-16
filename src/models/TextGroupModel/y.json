@@ -1,0 +1,239 @@
+{
+    "page": "meal-delivery-app",
+    "type": "MEDIA_GROUP",
+    "sections": [
+        {
+            "name": "cover-image",
+            "order": 1,
+            "mediaBlocks": [
+                {
+                    "src": "https://res.cloudinary.com/pravasith/image/upload/v1657644973/Portfolio%202022/blogs/meal-delivery-app/meal-delivery-app-01-cover-image.png",
+                    "alt": "Meal Delivery App homepage screenshots",
+                    "type": "IMAGE",
+                    "width": 1222,
+                    "height": 982,
+                    "caption": null,
+                    "showCaption": false,
+                    "hyperlink": null
+                }
+            ]
+        },
+
+        {
+            "name": "a-little-overview",
+            "order": 3,
+            "mediaBlocks": [
+                {
+                    "src": "https://res.cloudinary.com/pravasith/image/upload/v1657644972/Portfolio%202022/blogs/meal-delivery-app/meal-delivery-app-02-food-delivery-apps.png",
+                    "alt": "GrubHub, DoorDash, UberEats logos",
+                    "type": "IMAGE",
+                    "width": 798,
+                    "height": 95,
+                    "caption": "Widely used food delivery apps.",
+                    "showCaption": true,
+                    "hyperlink": null
+                },
+                {
+                    "src": "https://res.cloudinary.com/pravasith/image/upload/v1657644972/Portfolio%202022/blogs/meal-delivery-app/meal-delivery-app-03-uncle-ben-spiderman.jpg",
+                    "alt": "A still from the Spiderman movie where uncle Ben tells Peter Parker something about power and responsibility. Uncle Ben's face is zoomed in this image.",
+                    "type": "IMAGE",
+                    "width": 948,
+                    "height": 239,
+                    "caption": "But with a great user-growth, comes a great responsibility.:br:- Spiderman's uncle",
+                    "showCaption": true,
+                    "hyperlink": null
+                }
+            ]
+        },
+
+        {
+            "name": "my-design-solution",
+            "order": 7,
+            "mediaBlocks": [
+                {
+                    "src": "https://res.cloudinary.com/pravasith/image/upload/v1657644973/Portfolio%202022/blogs/meal-delivery-app/meal-delivery-app-05-user-study.png",
+                    "alt": "Eating habits of Millie and Walden, user study conducted by Pravasith.",
+                    "type": "IMAGE",
+                    "width": 1046,
+                    "height": 879,
+                    "caption": null,
+                    "showCaption": false,
+                    "hyperlink": null
+                }
+            ]
+        },
+
+        {
+            "name": "core-experience",
+            "order": 9,
+            "mediaBlocks": [
+                {
+                    "src": "https://res.cloudinary.com/pravasith/image/upload/v1657850168/Portfolio%202022/blogs/meal-delivery-app/meal-delivery-app-screenshot-1.jpg",
+                    "alt": "Food Centric Design screenshot 1",
+                    "type": "IMAGE",
+                    "width": 1161,
+                    "height": 866,
+                    "caption": "Regular orders are shown first, followed by categories.",
+                    "showCaption": true,
+                    "hyperlink": null
+                },
+                {
+                    "src": "https://res.cloudinary.com/pravasith/image/upload/v1657850168/Portfolio%202022/blogs/meal-delivery-app/meal-delivery-app-screenshot-2.jpg",
+                    "alt": "Food Centric Design screenshot 2",
+                    "type": "IMAGE",
+                    "width": 1121,
+                    "height": 556,
+                    "caption": "For people who are looking for new options.",
+                    "showCaption": true,
+                    "hyperlink": null
+                }
+            ]
+        },
+
+        {
+            "name": "curated-list-social-proof",
+            "order": 11,
+            "mediaBlocks": [
+                {
+                    "src": "https://res.cloudinary.com/pravasith/image/upload/v1657850168/Portfolio%202022/blogs/meal-delivery-app/meal-delivery-app-screenshot-3.jpg",
+                    "alt": "Food app, offers from latest places section",
+                    "type": "IMAGE",
+                    "width": 1044,
+                    "height": 439,
+                    "caption": "Offers highlighted for easy on-the-spot comparison and social proof in the form of past offer avails.",
+                    "showCaption": true,
+                    "hyperlink": null
+                },
+                {
+                    "src": "https://res.cloudinary.com/pravasith/image/upload/v1657929038/Portfolio%202022/blogs/meal-delivery-app/meal-delivery-app-screenshot-4.jpg",
+                    "alt": "Offers availed",
+                    "type": "IMAGE",
+                    "width": 1097,
+                    "height": 546,
+                    "caption": "Social validation - showing info about offers availed",
+                    "showCaption": true,
+                    "hyperlink": null
+                }
+            ]
+        },
+
+        {
+            "name": "hashtag-segregation",
+            "order": 13,
+            "mediaBlocks": [
+                {
+                    "src": "https://res.cloudinary.com/pravasith/image/upload/v1657850168/Portfolio%202022/blogs/meal-delivery-app/meal-delivery-app-screenshot-5.jpg",
+                    "alt": "Wireframes for hashtag based search pages.",
+                    "type": "IMAGE",
+                    "width": 923,
+                    "height": 546,
+                    "caption": "Flow diagram. The hashtag method.",
+                    "showCaption": true,
+                    "hyperlink": null
+                }
+            ]
+        },
+
+        {
+            "name": "hashtag-segregation",
+            "order": 14,
+            "mediaBlocks": [
+                {
+                    "src": "https://res.cloudinary.com/pravasith/image/upload/v1657850168/Portfolio%202022/blogs/meal-delivery-app/meal-delivery-app-screenshot-6.jpg",
+                    "alt": "Visual designs showing hashtag based search pages.",
+                    "type": "IMAGE",
+                    "width": 1322,
+                    "height": 797,
+                    "caption": null,
+                    "showCaption": false,
+                    "hyperlink": null
+                }
+            ]
+        },
+
+        {
+            "name": "food-rating-priority",
+            "order": 17,
+            "mediaBlocks": [
+                {
+                    "src": "https://res.cloudinary.com/pravasith/image/upload/v1657850167/Portfolio%202022/blogs/meal-delivery-app/meal-delivery-app-screenshot-7.png",
+                    "alt": "Wireframe showing results segregated priority wise in the following order - Public favorites, your favorites, offers nearby, and promoted ads.",
+                    "type": "IMAGE",
+                    "width": 293,
+                    "height": 601,
+                    "caption": "Results segregated priority wise, promoted ads shown last.",
+                    "showCaption": true,
+                    "hyperlink": null
+                }
+            ]
+        },
+
+        {
+            "name": "food-rating-priority",
+            "order": 19,
+            "mediaBlocks": [
+                {
+                    "src": "https://res.cloudinary.com/pravasith/image/upload/v1657850167/Portfolio%202022/blogs/meal-delivery-app/meal-delivery-app-screenshot-8.png",
+                    "alt": "Proportion biased ratings.",
+                    "type": "IMAGE",
+                    "width": 1299,
+                    "height": 117,
+                    "caption": null,
+                    "showCaption": false,
+                    "hyperlink": null
+                }
+            ]
+        },
+
+        {
+            "name": "food-rating-priority",
+            "order": 21,
+            "mediaBlocks": [
+                {
+                    "src": "https://res.cloudinary.com/pravasith/image/upload/v1657850168/Portfolio%202022/blogs/meal-delivery-app/meal-delivery-app-screenshot-10.jpg",
+                    "alt": "Local restaurants near you - restaurant sections shown in the app.",
+                    "type": "IMAGE",
+                    "width": 658,
+                    "height": 857,
+                    "caption": null,
+                    "showCaption": false,
+                    "hyperlink": null
+                }
+            ]
+        },
+
+        {
+            "name": "authenticity",
+            "order": 23,
+            "mediaBlocks": [
+                {
+                    "src": "https://res.cloudinary.com/pravasith/image/upload/v1657850168/Portfolio%202022/blogs/meal-delivery-app/meal-delivery-app-screenshot-11.jpg",
+                    "alt": "Mental health section and restaurant pages shown in the app.",
+                    "type": "IMAGE",
+                    "width": 1133,
+                    "height": 1470,
+                    "caption": null,
+                    "showCaption": false,
+                    "hyperlink": null
+                }
+            ]
+        },
+
+        {
+            "name": "health-and-money-tracker",
+            "order": 25,
+            "mediaBlocks": [
+                {
+                    "src": "https://res.cloudinary.com/pravasith/image/upload/v1657850168/Portfolio%202022/blogs/meal-delivery-app/meal-delivery-app-screenshot-12.jpg",
+                    "alt": "Personal health and money tracker.",
+                    "type": "IMAGE",
+                    "width": 1133,
+                    "height": 723,
+                    "caption": "Personal health and money tracker.",
+                    "showCaption": true,
+                    "hyperlink": null
+                }
+            ]
+        }
+    ]
+}
