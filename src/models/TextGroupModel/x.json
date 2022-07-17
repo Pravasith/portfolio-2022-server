@@ -1,7 +1,6 @@
 {
     "page": "meal-delivery-app",
     "type": "TEXT_GROUP",
-
     "sections": [
         {
             "name": "a-little-overview",
