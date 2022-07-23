@@ -685,5 +685,121 @@
                 ]
             }
         ]
+    },
+
+    "a": {
+        "page": "three-way-transformer",
+        "sections": [
+            {
+                "name": "cover",
+                "order": 1,
+                "mediaBlocks": [
+                    {
+                        "src": "https://res.cloudinary.com/pravasith/video/upload/v1658601101/Portfolio%202022/blogs/three-way-transformer/tyrex-video.mp4",
+                        "alt": "A video showing all of the robot's transformations.",
+                        "type": "VIDEO",
+                        "width": 640,
+                        "height": 360,
+                        "caption": null,
+                        "showCaption": false,
+                        "hyperlink": null
+                    }
+                ]
+            },
+
+            {
+                "name": "pictures",
+                "order": 4,
+                "mediaBlocks": [
+                    {
+                        "src": "https://res.cloudinary.com/pravasith/image/upload/v1658601066/Portfolio%202022/blogs/three-way-transformer/three-way-transformer-edit-1.jpg",
+                        "alt": "Image showing the transformer.",
+                        "type": "IMAGE",
+                        "width": 1163,
+                        "height": 825,
+                        "caption": null,
+                        "showCaption": false,
+                        "hyperlink": null
+                    },
+
+                    {
+                        "src": "https://res.cloudinary.com/pravasith/image/upload/v1658601066/Portfolio%202022/blogs/three-way-transformer/three-way-transformer-edit-2.jpg",
+                        "alt": "Image showing the transformer.",
+                        "type": "IMAGE",
+                        "width": 1163,
+                        "height": 825,
+                        "caption": null,
+                        "showCaption": false,
+                        "hyperlink": null
+                    },
+
+                    {
+                        "src": "https://res.cloudinary.com/pravasith/image/upload/v1658601066/Portfolio%202022/blogs/three-way-transformer/three-way-transformer-edit-3.jpg",
+                        "alt": "Image showing the transformer.",
+                        "type": "IMAGE",
+                        "width": 1163,
+                        "height": 825,
+                        "caption": null,
+                        "showCaption": false,
+                        "hyperlink": null
+                    },
+
+                    {
+                        "src": "https://res.cloudinary.com/pravasith/image/upload/v1658601066/Portfolio%202022/blogs/three-way-transformer/three-way-transformer-edit-4.jpg",
+                        "alt": "Image showing the transformer.",
+                        "type": "IMAGE",
+                        "width": 1163,
+                        "height": 825,
+                        "caption": null,
+                        "showCaption": false,
+                        "hyperlink": null
+                    },
+
+                    {
+                        "src": "https://res.cloudinary.com/pravasith/image/upload/v1658601066/Portfolio%202022/blogs/three-way-transformer/three-way-transformer-edit-5.jpg",
+                        "alt": "Image showing the transformer.",
+                        "type": "IMAGE",
+                        "width": 1163,
+                        "height": 825,
+                        "caption": null,
+                        "showCaption": false,
+                        "hyperlink": null
+                    },
+
+                    {
+                        "src": "https://res.cloudinary.com/pravasith/image/upload/v1658601072/Portfolio%202022/blogs/three-way-transformer/transformer-image-1.jpg",
+                        "alt": "Image showing the transformer.",
+                        "type": "IMAGE",
+                        "width": 2480,
+                        "height": 1417,
+                        "caption": null,
+                        "showCaption": false,
+                        "hyperlink": null
+                    },
+
+                    {
+                        "src": "https://res.cloudinary.com/pravasith/image/upload/v1658601072/Portfolio%202022/blogs/three-way-transformer/transformer-image-2.jpg",
+                        "alt": "Image showing the transformer.",
+                        "type": "IMAGE",
+                        "width": 2480,
+                        "height": 1417,
+                        "caption": null,
+                        "showCaption": false,
+                        "hyperlink": null
+                    },
+
+                    {
+                        "src": "https://res.cloudinary.com/pravasith/image/upload/v1658601082/Portfolio%202022/blogs/three-way-transformer/transformer-image-3.jpg",
+                        "alt": "Image showing the transformer.",
+                        "type": "IMAGE",
+                        "width": 2480,
+                        "height": 1417,
+                        "caption": null,
+                        "showCaption": false,
+                        "hyperlink": null
+                    }
+                ]
+            }
+        ]
     }
 }

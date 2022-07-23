@@ -574,5 +574,47 @@
                 ]
             }
         ]
+    },
+    "a": {
+        "page": "three-way-transformer",
+
+        "sections": [
+            {
+                "name": "introduction",
+                "order": 2,
+                "textBlocks": [
+                    {
+                        "type": "h3",
+                        "text": "Inspired from Transformers (Not the movies, the anime)."
+                    },
+                    {
+                        "type": "p",
+                        "text": "I used hard paper, glue, and a pair of scissors to make it. I called him Tyrex. Sorry about the cringey name, I was young and stupid."
+                    }
+                ]
+            },
+
+            {
+                "name": "pictures",
+                "order": 3,
+                "textBlocks": [
+                    {
+                        "type": "h3",
+                        "text": "Some pictures."
+                    }
+                ]
+            },
+
+            {
+                "name": "fin",
+                "order": 5,
+                "textBlocks": [
+                    {
+                        "type": "h3",
+                        "text": "Fin."
+                    }
+                ]
+            }
+        ]
     }
 }
