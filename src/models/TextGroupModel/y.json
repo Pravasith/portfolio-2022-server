@@ -421,5 +421,269 @@
                 ]
             }
         ]
+    },
+    "z": {
+        "page": "glasmet",
+        "sections": [
+            {
+                "name": "overview",
+                "order": 3,
+                "mediaBlocks": [
+                    {
+                        "src": "https://res.cloudinary.com/pravasith/image/upload/v1658542353/Portfolio%202022/blogs/glasmet/glasmet-cover-image.jpg",
+                        "alt": "A picture showing the glasmet and it's console side by side.",
+                        "type": "IMAGE",
+                        "width": 1338,
+                        "height": 709,
+                        "caption": null,
+                        "showCaption": false,
+                        "hyperlink": null
+                    }
+                ]
+            },
+
+            {
+                "name": "goal",
+                "order": 3,
+                "mediaBlocks": [
+                    {
+                        "src": "https://res.cloudinary.com/pravasith/image/upload/v1658542354/Portfolio%202022/blogs/glasmet/man-riding-on-road-wearing-glasmet.jpg",
+                        "alt": "A photograph of a man riding his motorbike wearing the Glasmet.",
+                        "type": "IMAGE",
+                        "width": 1338,
+                        "height": 623,
+                        "caption": "Life is short, and the world is wide",
+                        "showCaption": true,
+                        "hyperlink": null
+                    }
+                ]
+            },
+            {
+                "name": "the-need",
+                "order": 5,
+                "mediaBlocks": [
+                    {
+                        "src": "https://res.cloudinary.com/pravasith/image/upload/v1658542354/Portfolio%202022/blogs/glasmet/indian-bike-phone-users.jpg",
+                        "alt": "Three pictures of mobile phones mounted on to a motorbike's handle.",
+                        "type": "IMAGE",
+                        "width": 874,
+                        "height": 471,
+                        "caption": "Indian two-wheeler owners using GPS on their phones attached to their vehicles with the help of a phone mount holder",
+                        "showCaption": true,
+                        "hyperlink": null
+                    }
+                ]
+            },
+            {
+                "name": "the-need",
+                "order": 7,
+                "mediaBlocks": [
+                    {
+                        "src": "https://res.cloudinary.com/pravasith/video/upload/v1658542355/Portfolio%202022/blogs/glasmet/hud-helmet-pov.mp4",
+                        "alt": "A video of Glasmet in the POV of the rider.",
+                        "type": "VIDEO",
+                        "width": 800,
+                        "height": 450,
+                        "caption": "A HUD helmet powered by AR shows the way through on-screen navigation.",
+                        "showCaption": true,
+                        "hyperlink": null
+                    }
+                ]
+            },
+            {
+                "name": "ideation",
+                "order": 9,
+                "mediaBlocks": [
+                    {
+                        "src": "https://res.cloudinary.com/pravasith/image/upload/v1658542353/Portfolio%202022/blogs/glasmet/design-evolution-glasmet.jpg",
+                        "alt": "Design concept sketches of the Glasmet.",
+                        "type": "IMAGE",
+                        "width": 1376,
+                        "height": 499,
+                        "caption": null,
+                        "showCaption": false,
+                        "hyperlink": null
+                    }
+                ]
+            },
+            {
+                "name": "ideation",
+                "order": 11,
+                "mediaBlocks": [
+                    {
+                        "src": "https://res.cloudinary.com/pravasith/image/upload/v1658542354/Portfolio%202022/blogs/glasmet/glasmet-on-a-girl.jpg",
+                        "alt": "A girl wearing the Glasmet on a motorbike.",
+                        "type": "IMAGE",
+                        "width": 1336,
+                        "height": 768,
+                        "caption": null,
+                        "showCaption": false,
+                        "hyperlink": null
+                    },
+                    {
+                        "src": "https://res.cloudinary.com/pravasith/image/upload/v1658542354/Portfolio%202022/blogs/glasmet/glasmet-working.jpg",
+                        "alt": "Parts of the Glasmet annotated.",
+                        "type": "IMAGE",
+                        "width": 1336,
+                        "height": 768,
+                        "caption": null,
+                        "showCaption": false,
+                        "hyperlink": null
+                    },
+                    {
+                        "src": "https://res.cloudinary.com/pravasith/image/upload/v1658542354/Portfolio%202022/blogs/glasmet/glasmet-render-backside.jpg",
+                        "alt": "Backside render of the Glasmet.",
+                        "type": "IMAGE",
+                        "width": 1336,
+                        "height": 768,
+                        "caption": null,
+                        "showCaption": false,
+                        "hyperlink": null
+                    },
+
+                    {
+                        "src": "https://res.cloudinary.com/pravasith/image/upload/v1658542353/Portfolio%202022/blogs/glasmet/black-glasmet.jpg",
+                        "alt": "Man riding a black BMW bike wearing the Glasmet.",
+                        "type": "IMAGE",
+                        "width": 1326,
+                        "height": 714,
+                        "caption": null,
+                        "showCaption": false,
+                        "hyperlink": null
+                    }
+                ]
+            },
+
+            {
+                "name": "the-console",
+                "order": 13,
+                "mediaBlocks": [
+                    {
+                        "src": "https://res.cloudinary.com/pravasith/video/upload/v1658542353/Portfolio%202022/blogs/glasmet/console-glasmet-video.mp4",
+                        "alt": "A video showing the position of the Glasmet's console.",
+                        "type": "VIDEO",
+                        "width": 800,
+                        "height": 450,
+                        "caption": "The console is clamped to the handle that is operated easily with the thumb.",
+                        "showCaption": true,
+                        "hyperlink": null
+                    },
+                    {
+                        "src": "https://res.cloudinary.com/pravasith/image/upload/v1658542353/Portfolio%202022/blogs/glasmet/console-renders.jpg",
+                        "alt": "A picture showing two Glasmet consoles. One is in white and the other in black.",
+                        "type": "IMAGE",
+                        "width": 1326,
+                        "height": 714,
+                        "caption": null,
+                        "showCaption": false,
+                        "hyperlink": null
+                    },
+                    {
+                        "src": "https://res.cloudinary.com/pravasith/image/upload/v1658542353/Portfolio%202022/blogs/glasmet/console-annotations-glasmet.jpg",
+                        "alt": "A picture showing the parts of the Glasmet's console.",
+                        "type": "IMAGE",
+                        "width": 1336,
+                        "height": 752,
+                        "caption": null,
+                        "showCaption": false,
+                        "hyperlink": null
+                    }
+                ]
+            },
+
+            {
+                "name": "the-console",
+                "order": 15,
+                "mediaBlocks": [
+                    {
+                        "src": "https://res.cloudinary.com/pravasith/video/upload/v1658542355/Portfolio%202022/blogs/glasmet/interface-daemon-glasmet.mp4",
+                        "alt": "A video showing the working UI of the Glasmet's console on the Glasmet's display/glass.",
+                        "type": "VIDEO",
+                        "width": 800,
+                        "height": 392,
+                        "caption": null,
+                        "showCaption": false,
+                        "hyperlink": null
+                    },
+                    {
+                        "src": "https://res.cloudinary.com/pravasith/image/upload/v1658542354/Portfolio%202022/blogs/glasmet/glasmet-ui-ux.jpg",
+                        "alt": "Display mode and Notification UI screenshots.",
+                        "type": "IMAGE",
+                        "width": 1015,
+                        "height": 618,
+                        "caption": null,
+                        "showCaption": false,
+                        "hyperlink": null
+                    }
+                ]
+            },
+
+            {
+                "name": "photochromatic-glass",
+                "order": 17,
+                "mediaBlocks": [
+                    {
+                        "src": "https://res.cloudinary.com/pravasith/video/upload/v1658542354/Portfolio%202022/blogs/glasmet/glasmet-photochromatic-glass.mp4",
+                        "alt": "A video showing side by side comparision of the outside view through the Glasmet, with a regular glass, and with a Photochromatic glass.",
+                        "type": "VIDEO",
+                        "width": 800,
+                        "height": 450,
+                        "caption": null,
+                        "showCaption": false,
+                        "hyperlink": null
+                    }
+                ]
+            },
+
+            {
+                "name": "navigation-arrow",
+                "order": 19,
+                "mediaBlocks": [
+                    {
+                        "src": "https://res.cloudinary.com/pravasith/image/upload/v1658542354/Portfolio%202022/blogs/glasmet/navigation-arrow-glasmet.png",
+                        "alt": "A picture showing the navigation arrow.",
+                        "type": "IMAGE",
+                        "width": 803,
+                        "height": 231,
+                        "caption": null,
+                        "showCaption": false,
+                        "hyperlink": null
+                    }
+                ]
+            },
+
+            {
+                "name": "navigation-arrow",
+                "order": 21,
+                "mediaBlocks": [
+                    {
+                        "src": "https://res.cloudinary.com/pravasith/video/upload/v1658542355/Portfolio%202022/blogs/glasmet/navigation-arrow-video.mp4",
+                        "alt": "A video showing the navigation arrow in action while driving.",
+                        "type": "VIDEO",
+                        "width": 800,
+                        "height": 450,
+                        "caption": "The navigation arrow in action.",
+                        "showCaption": true,
+                        "hyperlink": null
+                    }
+                ]
+            },
+            {
+                "name": "fin",
+                "order": 23,
+                "mediaBlocks": [
+                    {
+                        "src": "https://res.cloudinary.com/pravasith/image/upload/v1658542353/Portfolio%202022/blogs/glasmet/final-image-glasmet.jpg",
+                        "alt": "A picture showing the backside of the Glasmet.",
+                        "type": "IMAGE",
+                        "width": 1292,
+                        "height": 727,
+                        "caption": null,
+                        "showCaption": false,
+                        "hyperlink": null
+                    }
+                ]
+            }
+        ]
     }
 }

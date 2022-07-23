@@ -390,5 +390,189 @@
                 ]
             }
         ]
+    },
+
+    "z": {
+        "page": "glasmet",
+
+        "sections": [
+            {
+                "name": "overview",
+                "order": 1,
+                "textBlocks": [
+                    {
+                        "type": "h3",
+                        "text": "Introduction"
+                    },
+                    {
+                        "type": "p",
+                        "text": "Right after college, when I was under the impression that I would never land any job, I started sketching out a few designs for a helmet powered by Mixed Reality tech. I did some modelling in Rhino and made a concept project about it. Here's the rest of the story. Hope you enjoy it."
+                    }
+                ]
+            },
+
+            {
+                "name": "goal",
+                "order": 2,
+                "textBlocks": [
+                    {
+                        "type": "h3",
+                        "text": "The Goal"
+                    },
+                    {
+                        "type": "p",
+                        "text": "The project's goal is to provide South Asian motorbike travelers with a way to access GPS navigation without having to stop and look at the phone."
+                    }
+                ]
+            },
+
+            {
+                "name": "the-need",
+                "order": 4,
+                "textBlocks": [
+                    {
+                        "type": "h3",
+                        "text": "The Need"
+                    },
+                    {
+                        "type": "p",
+                        "text": "In countries like India and China where a great deal of the population commutes using a two-wheeler of some kind, there is a great need for GPS accessories to navigate while commuting. This is especially for road trips. In a car, it is not much of a hassle but if you are on a bike trip, finding your location can be very annoying - On average, you’d have to look at your phone 5 times for directions in an hour. South Asian geographies and settlements are organically spread which makes it confusing to navigate."
+                    },
+                    {
+                        "type": "p",
+                        "text": "If you are not from South Asia, just Google “Bike trips in India” and you’ll get the idea of just how many people travel thousands of kilometers on two-wheelers on a yearly fun trip."
+                    },
+                    {
+                        "type": "p",
+                        "text": "The need for GPS is so clear that you can see one of such phone holders attached to the handle of the bike on almost everyone’s two-wheeler in India -"
+                    }
+                ]
+            },
+
+            {
+                "name": "the-need",
+                "order": 6,
+                "textBlocks": [
+                    {
+                        "type": "p",
+                        "text": "But what if you don’t have to look down often for directions while travelling on a two-wheeler? What if you get the directions on the road - like navigation in video games! Wouldn’t that be great?"
+                    }
+                ]
+            },
+
+            {
+                "name": "ideation",
+                "order": 8,
+                "textBlocks": [
+                    {
+                        "type": "h3",
+                        "text": "Ideation"
+                    }
+                ]
+            },
+
+            {
+                "name": "ideation",
+                "order": 10,
+                "textBlocks": [
+                    {
+                        "type": "p",
+                        "text": "The design evolved through multiple variations as it was hard to incorporate all the functions while keeping the aesthetics intact. Ergonomics and human-centric experience were a top priority in all of the variations."
+                    }
+                ]
+            },
+
+            {
+                "name": "the-console",
+                "order": 12,
+                "textBlocks": [
+                    {
+                        "type": "h3",
+                        "text": "The Console"
+                    }
+                ]
+            },
+
+            {
+                "name": "user-interface",
+                "order": 14,
+                "textBlocks": [
+                    {
+                        "type": "h3",
+                        "text": "User Interface"
+                    },
+
+                    {
+                        "type": "p",
+                        "text": "There are 4 elements that make up for the essential functions of the Glasmet"
+                    },
+
+                    {
+                        "type": "li",
+                        "text": "Main menu;;;Navigation;;;Music;;;Calls"
+                    }
+                ]
+            },
+
+            {
+                "name": "photochromatic-glass",
+                "order": 16,
+                "textBlocks": [
+                    {
+                        "type": "h3",
+                        "text": "Photochromatic glass"
+                    },
+
+                    {
+                        "type": "p",
+                        "text": "A major problem for the AR glasses is excessive sunlight. So Glasmet’s protective glass has a photochromatic layer which darkens in excessive sunlight and lightens when it is not so bright."
+                    }
+                ]
+            },
+
+            {
+                "name": "navigation-arrow",
+                "order": 18,
+                "textBlocks": [
+                    {
+                        "type": "h3",
+                        "text": "The Navigation arrow"
+                    }
+                ]
+            },
+
+            {
+                "name": "navigation-arrow",
+                "order": 20,
+                "textBlocks": [
+                    {
+                        "type": "p",
+                        "text": "This guy is the real star. Navigating is so much easier when you see the arrow move left and right according to Google map’s direction APIs. The realtime movement of the arrow inspired from video games is like someone sitting on the back seat telling you left or right while driving."
+                    }
+                ]
+            },
+
+            {
+                "name": "fin",
+                "order": 22,
+                "textBlocks": [
+                    {
+                        "type": "h3",
+                        "text": "Fin"
+                    }
+                ]
+            },
+
+            {
+                "name": "fin",
+                "order": 24,
+                "textBlocks": [
+                    {
+                        "type": "p",
+                        "text": "Okay, there are a ton of features and specifics we can go into, but since this is only a concept project that I had thought of during college (2016), I am wrapping this up here. It is 2020 now, and I have seen companies/start-ups work on a similar concept, build a prototype and even launch on Kickstarter. However, there is not much penetration in the Indian market at least. But AR and Mixed Reality gadgets will be a cardinal thing of the future, I strongly believe it!"
+                    }
+                ]
+            }
+        ]
     }
 }
