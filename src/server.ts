@@ -1,6 +1,7 @@
 import cors from "cors"
 import express from "express"
 import path from "path"
+import helmet from "helmet"
 
 process.env.NODE_ENV !== "production" &&
     require("dotenv").config({
@@ -11,6 +12,8 @@ import routes from "@routes/index"
 import MongooseService from "@services/MongooseService"
 
 const app = express()
+app.use(helmet())
+
 const port = 8000 // default port to listen
 
 const corsOptions = {
@@ -20,7 +23,7 @@ const corsOptions = {
 
 app.use(cors(corsOptions))
 
-app.use(express.json())
+app.use(express.json({ limit: "50kb" }))
 app.use(express.urlencoded({ extended: true }))
 
 MongooseService.connect()
