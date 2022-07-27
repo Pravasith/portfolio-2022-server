@@ -7,6 +7,7 @@ import { addProject, getProjects } from "@routes/ProjectRoutes"
 import { addBlog, getBlogsByPage, getBlogsByCategory } from "@routes/BlogRoutes"
 import { addMediaGroup, getMediaGroups } from "@routes/MediaGroupRoutes"
 import { sendEmail } from "@routes/EmailRoutes"
+import { rateLimiter } from "@utils/index"
 
 const router = Router()
 
@@ -36,7 +37,7 @@ router.get(API_ROUTE_URLS.GET_BLOGS, getBlogsByPage)
 router.get(API_ROUTE_URLS.GET_BLOGS_CATEGORIES, getBlogsByCategory)
 
 // Email Routes
-router.post(BASE_URLS.EMAIL, sendEmail)
+router.post(BASE_URLS.EMAIL, rateLimiter, sendEmail)
 
 const routes = router
 

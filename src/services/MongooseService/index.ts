@@ -1,7 +1,7 @@
 import configs from "@configs/index"
 import mongoose from "mongoose"
 
-const { uri } = configs.MongoDB
+const { uri } = configs.MongoDBConfig
 
 const connect = () => {
     mongoose

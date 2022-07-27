@@ -1,7 +1,9 @@
-import MongoDB from "@configs/MongoDBConfig"
+import MongoDBConfig from "@configs/MongoDBConfig"
+import MailGunConfig from "@configs/MailGunConfig"
 
 const configs = {
-    MongoDB,
+    MongoDBConfig,
+    MailGunConfig,
 }
 
 export default configs
