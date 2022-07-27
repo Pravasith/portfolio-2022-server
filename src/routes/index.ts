@@ -6,6 +6,7 @@ import { addTextGroup, getTextGroup } from "@routes/TextGroupRoutes"
 import { addProject, getProjects } from "@routes/ProjectRoutes"
 import { addBlog, getBlogsByPage, getBlogsByCategory } from "@routes/BlogRoutes"
 import { addMediaGroup, getMediaGroups } from "@routes/MediaGroupRoutes"
+import { sendEmail } from "@routes/EmailRoutes"
 
 const router = Router()
 
@@ -33,5 +34,8 @@ router.get(API_ROUTE_URLS.GET_PROJECTS, getProjects)
 router.post(API_ROUTE_URLS.ADD_BLOG, addBlog)
 router.get(API_ROUTE_URLS.GET_BLOGS, getBlogsByPage)
 router.get(API_ROUTE_URLS.GET_BLOGS_CATEGORIES, getBlogsByCategory)
+
+// Email Routes
+router.post(BASE_URLS.EMAIL, sendEmail)
 
 export default router
