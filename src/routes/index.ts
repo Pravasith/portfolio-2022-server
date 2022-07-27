@@ -38,4 +38,6 @@ router.get(API_ROUTE_URLS.GET_BLOGS_CATEGORIES, getBlogsByCategory)
 // Email Routes
 router.post(BASE_URLS.EMAIL, sendEmail)
 
-export default router
+const routes = router
+
+export default routes

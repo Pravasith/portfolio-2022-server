@@ -3,8 +3,8 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const mongooseService_1 = __importDefault(require("@services/mongooseService"));
+const MongooseService_1 = __importDefault(require("@services/MongooseService"));
 const services = {
-    mongooseService: mongooseService_1.default,
+    MongooseService: MongooseService_1.default,
 };
 exports.default = services;

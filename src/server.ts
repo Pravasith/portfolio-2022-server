@@ -1,3 +1,5 @@
+import "module-alias/register"
+
 import cors from "cors"
 import express from "express"
 import path from "path"
@@ -14,7 +16,7 @@ import MongooseService from "@services/MongooseService"
 const app = express()
 app.use(helmet())
 
-const port = 8000 // default port to listen
+const port = process.env.PORT || 8000 // default port to listen
 
 const corsOptions = {
     origin: ["http://localhost:3000"],
