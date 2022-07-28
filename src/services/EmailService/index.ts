@@ -7,7 +7,6 @@ const sendEmail = async (emailOptions: EmailOptionsType) => {
     const { name, email, message } = emailOptions
 
     const mailGunConfig = configs.MailGunConfig
-
     const { mailGunOptions, mailTo, mailFrom } = mailGunConfig
 
     const transporter = nodemailer.createTransport(mailGun(mailGunOptions))
@@ -20,7 +19,6 @@ const sendEmail = async (emailOptions: EmailOptionsType) => {
     }
 
     const emailResponse = await transporter.sendMail(mailOptions)
-
     return emailResponse
 }
 
