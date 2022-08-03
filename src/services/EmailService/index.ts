@@ -14,7 +14,7 @@ const sendEmail = async (emailOptions: EmailOptionsType) => {
     const mailOptions = {
         from: mailFrom,
         to: mailTo,
-        subject: `Yo bitch, a message from ${name?.slice(0, 30)}`,
+        subject: `WEBMAIL:: a message from ${name?.slice(0, 30)}`,
         text: `Sender email: ${email}. Message: ${message}`,
     }
 
