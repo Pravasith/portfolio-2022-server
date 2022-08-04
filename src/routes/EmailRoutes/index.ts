@@ -3,34 +3,29 @@ import { EmailOptionsType } from "@services/EmailService/interface"
 import EmailService from "@services/EmailService"
 import { Request, RequestHandler } from "express"
 import HttpStatusCode from "@lib/server/statusCodes"
-import {
-    CallBackOptionsType,
-    ResponseOptionsType,
-} from "@utils/handleResponse/interface"
-import handleResponse from "@utils/handleResponse"
+import SendResponse from "@utils/SendResponse"
 
 export const sendEmail: RequestHandler = async (
     req: Request<{}, {}, EmailOptionsType>,
     res
 ) => {
-    if (validateEmail(req.body.email) && !!req.body.message) {
-        const responseOptions: ResponseOptionsType = {
-                errorMessage: "Error sending email",
-                successMessage: "Email sent successfully",
-                errorStatusCode: HttpStatusCode.ACCEPTED,
-                successStatusCode: HttpStatusCode.OK,
-            },
-            callBackOptions: CallBackOptionsType = {
-                cb: EmailService.sendEmail,
-                cbArgs: [req.body],
-            }
+    const sendResponse = new SendResponse()
 
-        handleResponse(responseOptions, callBackOptions, res)
-    } else {
-        res.status(400)
-        res.send({
-            message: "Missing fields or bad data",
-            body: null,
-        })
+    try {
+        if (validateEmail(req.body.email) && !!req.body.message) {
+            await EmailService.sendEmail(req.body)
+            sendResponse.setMessage = "Email received and queued"
+            sendResponse.setBody = "Email queued."
+            res.status(HttpStatusCode.CREATED)
+        } else {
+            throw new Error("Validation error")
+        }
+    } catch (e) {
+        console.error(e)
+        sendResponse.setMessage = "Error sending email"
+        sendResponse.setError = "Email not queued."
+        res.status(HttpStatusCode.INTERNAL_SERVER_ERROR)
+    } finally {
+        res.send(sendResponse)
     }
 }

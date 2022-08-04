@@ -3,6 +3,9 @@ import models from "@models/index"
 
 const { ProjectModel } = models
 
+import HttpStatusCode from "@lib/server/statusCodes"
+import SendResponse from "@utils/SendResponse"
+
 export const addProject: RequestHandler = async (_, res) => {
     // const textBlock = await ProjectModel.create({
     //     name: "all-projects",
@@ -62,13 +65,19 @@ export const addProject: RequestHandler = async (_, res) => {
 }
 
 export const getProjects: RequestHandler = async (_, res) => {
-    let response: any = { message: "project database error" }
+    const sendResponse = new SendResponse()
 
     try {
-        response = await ProjectModel.find()
-    } catch (err) {
-        console.error(err)
+        const response = await ProjectModel.find()
+        sendResponse.setMessage = "Projects fetched successfully"
+        sendResponse.setBody = response
+        res.status(HttpStatusCode.OK)
+    } catch (e) {
+        console.error(e)
+        sendResponse.setMessage = "Error fetching Project"
+        sendResponse.setError = "Database error"
+        res.status(HttpStatusCode.INTERNAL_SERVER_ERROR)
     } finally {
-        res.send(response)
+        res.send(sendResponse)
     }
 }

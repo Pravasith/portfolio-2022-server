@@ -4,46 +4,42 @@ import { RequestHandler } from "express"
 
 const { BlogModel } = models
 
+import HttpStatusCode from "@lib/server/statusCodes"
+import SendResponse from "@utils/SendResponse"
+
 export const addBlog: RequestHandler = async (req, res) => {
-    let response: any = { message: "blog database error" }
+    const sendResponse = new SendResponse()
 
     try {
-        response = await BlogModel.create(req.body)
-    } catch (err) {
-        console.error(err)
+        const response = await BlogModel.create(req.body)
+        sendResponse.setMessage = "Blog added successfully"
+        sendResponse.setBody = response
+        res.status(HttpStatusCode.CREATED)
+    } catch (e) {
+        console.error(e)
+        sendResponse.setMessage = "Error adding Blog"
+        sendResponse.setError = "Database error"
+        res.status(HttpStatusCode.INTERNAL_SERVER_ERROR)
     } finally {
-        res.send(response)
+        res.send(sendResponse)
     }
 }
 
-export const getBlogsByPage: RequestHandler = async (req, res) => {
-    const { page } = req.query
-
-    let response: any = { message: "blog database error" }
+export const getBlogs: RequestHandler = async (req, res) => {
+    const sendResponse = new SendResponse()
 
     try {
-        response = await BlogModel.find({
-            page,
-        })
-    } catch (err) {
-        console.error(err)
+        const { page, category } = req.query
+        const response = await BlogModel.find(page ? { page } : { category })
+        sendResponse.setMessage = "Blog fetched successfully"
+        sendResponse.setBody = response
+        res.status(HttpStatusCode.OK)
+    } catch (e) {
+        console.error(e)
+        sendResponse.setMessage = "Error fetching Blog"
+        sendResponse.setError = "Database error"
+        res.status(HttpStatusCode.INTERNAL_SERVER_ERROR)
     } finally {
-        res.send(response)
-    }
-}
-
-export const getBlogsByCategory: RequestHandler = async (req, res) => {
-    const { category } = req.query
-
-    let response: any = { message: "blog database error" }
-
-    try {
-        response = await BlogModel.find({
-            category,
-        })
-    } catch (err) {
-        console.error(err)
-    } finally {
-        res.send(response)
+        res.send(sendResponse)
     }
 }
