@@ -28,7 +28,11 @@ app.use(cors(corsOptions))
 app.use(express.json({ limit: "50kb" }))
 app.use(express.urlencoded({ extended: true }))
 
-MongooseService.connect()
+try {
+    MongooseService.connect()
+} catch (error) {
+    console.log(error)
+}
 
 app.use("/", routes)
 
