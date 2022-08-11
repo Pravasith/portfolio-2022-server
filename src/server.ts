@@ -19,7 +19,7 @@ app.use(helmet())
 const port = process.env.PORT || 8000 // default port to listen
 
 const corsOptions = {
-    origin: ["http://localhost:3000", "https://portfolio-2022-web.vercel.app/"],
+    origin: ["http://localhost:3000", "https://portfolio-2022-web.vercel.app"],
     credentials: true, // <-- REQUIRED backend setting
 }
 
