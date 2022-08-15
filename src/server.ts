@@ -19,7 +19,10 @@ app.use(helmet())
 const port = process.env.PORT || 8000 // default port to listen
 
 const corsOptions = {
-    origin: ["http://localhost:3000", "https://portfolio-2022-web.vercel.app"],
+    origin:
+        process.env.NODE_ENV === "production"
+            ? ["https://pravasith.com"]
+            : ["http://localhost:3000"],
     credentials: true, // <-- REQUIRED backend setting
 }
 
@@ -38,5 +41,5 @@ app.use("/", routes)
 
 // start the Express server
 app.listen(process.env.PORT ?? port, () => {
-    console.log(`Server started @http://localhost:${port}`)
+    console.log(`Server started on port + ${port}`)
 })
