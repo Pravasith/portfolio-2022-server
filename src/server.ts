@@ -41,5 +41,5 @@ app.use("/", routes)
 
 // start the Express server
 app.listen(process.env.PORT ?? port, () => {
-    console.log(`Server started on port + ${port}`)
+    console.log(`Server started on port ${port}`)
 })

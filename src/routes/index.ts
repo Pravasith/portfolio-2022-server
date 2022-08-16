@@ -17,19 +17,23 @@ const router = Router()
 router.get(BASE_URLS.HOME, home)
 
 // TextGroup Routes
-router.post(BASE_URLS.TEXT_GROUPS, addTextGroup)
+// TODO: Change these later
+// router.post(BASE_URLS.TEXT_GROUPS, addTextGroup)
 router.get(BASE_URLS.TEXT_GROUPS, getTextGroup)
 
 // MediaGroup Routes
-router.post(BASE_URLS.MEDIA_GROUPS, addMediaGroup)
+// TODO: Change these later
+// router.post(BASE_URLS.MEDIA_GROUPS, addMediaGroup)
 router.get(BASE_URLS.MEDIA_GROUPS, getMediaGroups)
 
 // Project Routes
-router.post(BASE_URLS.PROJECTS, addProject)
+// TODO: Change these later
+// router.post(BASE_URLS.PROJECTS, addProject)
 router.get(BASE_URLS.PROJECTS, getProjects)
 
 // Blog Routes
-router.post(BASE_URLS.BLOG, addBlog)
+// TODO: Change these later
+// router.post(BASE_URLS.BLOG, addBlog)
 router.get(BASE_URLS.BLOG, getBlogs)
 
 // Email Routes
