@@ -5,10 +5,10 @@ import { BASE_URLS } from "@lib/server/api"
 import { rateLimiter } from "@utils/index"
 
 import { home } from "@routes/HomeRoutes"
-import { addTextGroup, getTextGroup } from "@routes/TextGroupRoutes"
-import { addProject, getProjects } from "@routes/ProjectRoutes"
-import { addMediaGroup, getMediaGroups } from "@routes/MediaGroupRoutes"
-import { addBlog, getBlogs } from "@routes/BlogRoutes"
+import { getTextGroup } from "@routes/TextGroupRoutes"
+import { getProjects } from "@routes/ProjectRoutes"
+import { getMediaGroups } from "@routes/MediaGroupRoutes"
+import { getBlogs } from "@routes/BlogRoutes"
 import { sendEmail } from "@routes/EmailRoutes"
 
 const router = Router()
