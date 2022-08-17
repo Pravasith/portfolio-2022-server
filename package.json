@@ -9,7 +9,7 @@
     "private": false,
     "scripts": {
         "dev": "nodemon -e ts --exec ts-node -r tsconfig-paths/register src/server.ts --watch src",
-        "start": "NODE_ENV=production node build/server.js",
+        "start": "node build/server.js",
         "build": "tsc -p ."
     },
     "devDependencies": {
