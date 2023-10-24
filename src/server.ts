@@ -1,4 +1,3 @@
-// process.env.NODE_ENV === "production" && 
 require("module-alias/register")
 
 import cors from "cors"
@@ -6,10 +5,9 @@ import express from "express"
 import path from "path"
 import helmet from "helmet"
 
-process.env.NODE_ENV !== "production" &&
-    require("dotenv").config({
-        path: path.join(__dirname, "/envs/staging.env"),
-    })
+require("dotenv").config({
+    path: path.join(__dirname, "../src/envs/staging.env"),
+})
 
 import routes from "@routes/index"
 import MongooseService from "@services/MongooseService"

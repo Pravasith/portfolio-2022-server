@@ -8,7 +8,7 @@
     "license": "MIT",
     "private": false,
     "scripts": {
-        "dev": "nodemon -e ts --exec ts-node -r tsconfig-paths/register src/server.ts --watch src",
+        "dev": "npx tsc && node build/server.js",
         "start": "node build/server.js",
         "build": "tsc -p ."
     },
