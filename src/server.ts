@@ -1,4 +1,5 @@
-process.env.NODE_ENV === "production" && require("module-alias/register")
+// process.env.NODE_ENV === "production" && 
+require("module-alias/register")
 
 import cors from "cors"
 import express from "express"
