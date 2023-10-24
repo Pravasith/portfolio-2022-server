@@ -5,6 +5,9 @@ import express from "express"
 import path from "path"
 import helmet from "helmet"
 
+console.log(process.env.NODE_ENV)
+console.log(path.join(__dirname, "../src/envs/staging.env"))
+
 require("dotenv").config({
     path: path.join(__dirname, "../src/envs/staging.env"),
 })

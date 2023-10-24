@@ -4,6 +4,8 @@ import mongoose from "mongoose"
 const { uri } = configs.MongoDBConfig
 
 const connect = () => {
+    console.log(process.env.MONGODB_PASSWORD, uri)
+
     mongoose
         .connect(uri)
         .then(() => {
